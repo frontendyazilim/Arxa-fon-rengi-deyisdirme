@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+ol{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 200px;
+    height: 50px;
+    background-color: #2b77dc;
+    overflow: hidden;
+    transition: 1s;
+    margin: 10px;
+}
+span{
+    position: absolute;
+    background-color: red;
+    width: 200px;
+    height: 25px;
+    top:0;
+    left:0;
+    font-size: 1.2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+    width: 60px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    visibility: hidden;
+
+}
+ol:hover .button{
+    visibility: visible;
+    transition: 0.5s;
+}
+ol:hover{
+    height:200px;
+}
+#green{
+    transform: translate(20px,-50px);
+}
+#green:hover{
+    background-color: seagreen;
+}
+#yellow{
+    transform: translate(-80px,-50px);
+
+}
+#yellow:hover{
+    background-color: #dcd32b;
+}
+#purple{
+    transform: translate(20px,0);
+}
+#purple:hover{
+    background-color: #ca17ca;
+}
+#blue{
+    transform: translate(-80px,0);
+}
+#blue:hover{
+    background-color: lightskyblue;
+}
+#orange{
+    transform: translate(-80px,50px);
+
+}
+#orange:hover{
+    background-color: #eaab17;
+}
+#white{
+    transform: translate(20px,50px);
+}
